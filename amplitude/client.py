@@ -11,6 +11,7 @@ class AmplitudeExport:
         self.__auth = (api_key, secret_key)
 
     def _response_handler(self, response):
+        response.raise_for_status()
         content = zipfile.ZipFile(BytesIO(response.content))
         data = list()
         for name in content.namelist():

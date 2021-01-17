@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
     name = "python-amplitude-export", 
     packages = ["amplitude"], 
-    version = "0.0.1", 
+    version = "0.0.2", 
     license="MIT", 
     description = "Python wrapper for Amplitude Export API", 
     author = "Faisal Malik Widya Prasetya", 
